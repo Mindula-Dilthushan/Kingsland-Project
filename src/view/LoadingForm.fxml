@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadingFormController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="73.0" prefHeight="523.0" prefWidth="883.0" styleClass="loadingFormMain" stylesheets="@styles/StylesSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="10.0" layoutY="12.0" prefHeight="426.0" prefWidth="780.0" styleClass="loadingFormOutLine" stylesheets="@styles/StylesSheet.css" />
+            <ImageView fitHeight="174.0" fitWidth="183.0" layoutX="314.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/circle-cropped.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="275.0" text="KingsLand Institute ">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.41747572815533984" startY="1.0">
+                     <stops>
+                        <Stop color="#ff9a00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="305.0" layoutY="219.0" text="Welcome to">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.41747572815533984" startY="1.0">
+                     <stops>
+                        <Stop color="#ff9a00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="434.0" layoutY="405.0" text="Product By :">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3980582524271845">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="547.0" layoutY="405.0" text="Alpha X Software Solution">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3980582524271845">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
