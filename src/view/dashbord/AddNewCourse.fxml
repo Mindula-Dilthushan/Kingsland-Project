@@ -15,6 +15,11 @@
    <children>
       <AnchorPane fx:id="anchorDashBord" layoutX="6.0" prefHeight="564.0" prefWidth="1256.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
          <children>
+            <ImageView fitHeight="418.0" fitWidth="509.0" layoutX="419.0" layoutY="58.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asserts/circle-cropped.png" />
+               </image>
+            </ImageView>
             <Label layoutX="526.0" layoutY="78.0" text="Add New Course">
                <font>
                   <Font name="Times New Roman Bold" size="28.0" />
@@ -85,12 +90,13 @@
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="618.0" layoutY="465.0" text="Add">
+            <JFXButton fx:id="btnCourse" buttonType="RAISED" layoutX="730.0" layoutY="476.0" onAction="#btnCourseOnAction" style="-fx-background-radius: 50;" text="Add">
                <ripplerFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
-                        <Stop color="WHITE" />
-                        <Stop color="#1b1b1b" offset="1.0" />
+                        <Stop color="#ffb700" />
+                        <Stop color="#dab256" offset="0.09789712986643934" />
+                        <Stop color="#ffc300" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </ripplerFill>
@@ -98,25 +104,27 @@
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="734.0" layoutY="465.0" text="Cancel">
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="WHITE" />
-                        <Stop color="#1b1b1b" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-               <font>
-                  <Font name="Times New Roman Bold" size="20.0" />
-               </font>
-            </JFXButton>
-            <ImageView fitHeight="418.0" fitWidth="509.0" layoutX="419.0" layoutY="58.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../asserts/circle-cropped.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" contentDisplay="CENTER" layoutX="19.0" layoutY="21.0" onAction="#btnCloseOnAction" prefHeight="61.0" prefWidth="68.0" style="-fx-background-radius: 50;" text=".">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asserts/Circled%20Left_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

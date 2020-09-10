@@ -1,3 +1,6 @@
+//Programmer Mindula Dilthushan
+//Product Company Alpha X Software Solution
+//Kingsland Project
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -8,17 +11,18 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class AppInitializer extends Application {
+
     public static void main(String[] args) {
         launch(args);
     }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/LoadingForm.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/loarding/LoadingForm.fxml"))));
         //primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setTitle("Lording Form");
         primaryStage.centerOnScreen();
         primaryStage.show();
-
             Timer timer = new Timer();
             timer.schedule(new TimerTask() {
                 @Override
@@ -29,7 +33,7 @@ public class AppInitializer extends Application {
                             Stage window = (Stage) primaryStage.getScene().getWindow();
                             primaryStage.centerOnScreen();
                             try {
-                                window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/DashBordForm.fxml"))));
+                                window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/dashbord/MainForm.fxml"))));
                                 primaryStage.setTitle("DashBord Form");
                                 primaryStage.centerOnScreen();
                                 primaryStage.show();
@@ -39,6 +43,6 @@ public class AppInitializer extends Application {
                         }
                     });
                 }
-            },2000);
+            },500);
     }
 }

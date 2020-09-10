@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="564.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashbord.CourseFormController">
+   <children>
+      <AnchorPane fx:id="anchorDashBord" layoutX="22.0" layoutY="84.0" prefHeight="564.0" prefWidth="1256.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnAddCourse" buttonType="RAISED" layoutX="305.0" layoutY="480.0" onAction="#btnAddCourseOnAction" prefHeight="37.0" prefWidth="135.0" style="-fx-background-radius: 50;" text="Add Course">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb200" />
+                        <Stop color="#949089" offset="0.13704177323103156" />
+                        <Stop color="#ffcc00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="172.0" layoutY="480.0" onAction="#btnClearOnAction" style="-fx-background-radius: 50;" text="Clear">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb200" />
+                        <Stop color="#949089" offset="0.13704177323103156" />
+                        <Stop color="#ffcc00" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="12.0" onAction="#btnCloseOnAction" prefHeight="61.0" prefWidth="68.0" style="-fx-background-radius: 50;" text=".">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asserts/Circled%20Left_104px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXTextField fx:id="txtCode" labelFloat="true" layoutX="172.0" layoutY="173.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Code">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCName" labelFloat="true" layoutX="172.0" layoutY="229.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Name ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCIntake" labelFloat="true" layoutX="172.0" layoutY="286.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Intake">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCRupees" labelFloat="true" layoutX="171.0" layoutY="346.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Fee (Rs.)">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCDuration" labelFloat="true" layoutX="171.0" layoutY="402.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Duration ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="41.0" layoutY="182.0" prefHeight="23.0" prefWidth="120.0" text="Course Code :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="238.0" prefHeight="23.0" prefWidth="127.0" text="Course Name :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="295.0" prefHeight="23.0" prefWidth="127.0" text="Course Intake :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="355.0" prefHeight="23.0" prefWidth="112.0" text="Course Fee :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="411.0" prefHeight="23.0" prefWidth="148.0" text="Course Duration :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbCName" layoutX="372.0" layoutY="173.0" prefHeight="31.0" prefWidth="112.0" />
+            <TableView fx:id="tblCourseMain" layoutX="496.0" layoutY="171.0" prefHeight="381.0" prefWidth="750.0">
+              <columns>
+                <TableColumn fx:id="colCode" prefWidth="118.0" text="Code" />
+                <TableColumn fx:id="colName" prefWidth="148.0" text="Name" />
+                  <TableColumn fx:id="colIntake" prefWidth="148.0" text="Intake" />
+                  <TableColumn fx:id="colFee" prefWidth="174.0" text="Fee (Rs)" />
+                  <TableColumn fx:id="colDuration" prefWidth="161.0" text="Duration" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="418.0" fitWidth="509.0" layoutX="419.0" layoutY="52.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asserts/circle-cropped.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="534.0" layoutY="81.0" text="Course Details">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

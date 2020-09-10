@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loarding.LoadingFormController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="73.0" prefHeight="523.0" prefWidth="883.0" styleClass="loadingFormMain" stylesheets="@../styles/StylesSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="432.0" fitWidth="787.0" layoutX="8.0" layoutY="8.0" opacity="0.34" pickOnBounds="true">
+               <image>
+                  <Image url="@../../asserts/Copy%20of%20Tech%20News%20Vlog%20Banner%20-%20Made%20with%20PosterMyWall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="174.0" fitWidth="183.0" layoutX="112.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asserts/circle-cropped.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="344.0" layoutY="127.0" text="KingsLand Institute ">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.41747572815533984" startY="1.0">
+                     <stops>
+                        <Stop color="#ff9a00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="419.0" layoutY="71.0" text="Welcome to">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.41747572815533984" startY="1.0">
+                     <stops>
+                        <Stop color="#ff9a00" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="123.0" layoutY="251.0" text="Product By " textFill="#f0a60a">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
