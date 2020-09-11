@@ -1,5 +1,8 @@
 package controller;
 
+import bo.BOFactory;
+import bo.custom.CourseBO;
+import bo.custom.StudentBO;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -10,6 +13,7 @@ import util.Util;
 import util.impl.UtilImpl;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class AddCourseFormController {
     public AnchorPane MainAnchor;
@@ -24,7 +28,7 @@ public class AddCourseFormController {
 
     Util util = new UtilImpl();
 
-
+    CourseBO courseBO = BOFactory.getInstance().getBo(BOFactory.BOType.COURSE);
 
     public void btnAddCourseOnAction(ActionEvent actionEvent) {
     }
@@ -51,4 +55,5 @@ public class AddCourseFormController {
         txtCRupees.setText("");
         txtCDuration.setText("");
     }
+
 }

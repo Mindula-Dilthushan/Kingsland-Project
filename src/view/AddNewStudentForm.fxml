@@ -101,7 +101,7 @@
             </Label>
             <JFXComboBox fx:id="cmbStId" layoutX="746.0" layoutY="137.0" prefHeight="31.0" prefWidth="112.0" />
             <JFXComboBox fx:id="cmbStGender" layoutX="746.0" layoutY="429.0" prefHeight="31.0" prefWidth="112.0" />
-            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="917.0" layoutY="126.0" onAction="#btnRegisterOnAction" style="-fx-background-radius: 50;" text="Register">
+            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="917.0" layoutY="126.0" onAction="#btnRegOnAction" style="-fx-background-radius: 50;" text="Register">
                <ripplerFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>

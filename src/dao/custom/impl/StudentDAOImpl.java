@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentDAOImpl implements StudentDAO {
     @Override
     public boolean save(Student student) throws Exception {
-        return CrudUtil.execute("INSERT INTO student VALUES(?,?,?,?)",student.getStId(),student.getStName(),student.getStAddress(),student.getStContact(),student.getStDob(),student.getStGender());
+        return CrudUtil.execute("INSERT INTO student VALUES(?,?,?,?,?)",student.getStId(),student.getStName(),student.getStAddress(),student.getStContact(),student.getStDob(),student.getStGender());
     }
 
     @Override

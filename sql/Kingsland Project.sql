@@ -34,7 +34,7 @@ CREATE TABLE registration(
 
 INSERT INTO student(stId,stName,stAddress,stContact,stDob,stGender)
 		VALUES ('S001','Mindula','Matara','0764184020','2000-10-23','Male'),
-			   ('S002','Shashini','Galle','0702498385','2000-01-17','Female'),
+			   ('S002','Dilthushan','Galle','0702498385','2000-01-17','Male'),
 			   ('S003','Shan','Colombo','0752915762','2000-04-01','Male');
 
 INSERT INTO course(courseCode,courseName,courseIntake,courseFee,courseDuration)
