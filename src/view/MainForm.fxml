@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -42,7 +44,66 @@
             <Font name="Times New Roman Bold" size="22.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnClose" buttonType="RAISED" contentDisplay="CENTER" layoutX="1199.0" layoutY="17.0" onAction="#btnCloseOnAction" prefHeight="61.0" prefWidth="66.0" style="-fx-background-radius: 60;" text=".">
+      <AnchorPane fx:id="MainAnchor" layoutX="11.0" layoutY="90.0" prefHeight="548.0" prefWidth="1256.0">
+         <children>
+            <Label layoutX="542.0" layoutY="22.0" text="View Student">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblStMain" layoutX="82.0" layoutY="66.0" prefHeight="200.0" prefWidth="1092.0">
+              <columns>
+                <TableColumn fx:id="colStId" prefWidth="129.0" text="Student ID" />
+                <TableColumn fx:id="colStName" prefWidth="166.0" text="Student Name" />
+                  <TableColumn fx:id="colStAddress" prefWidth="296.0" text="Student Address" />
+                  <TableColumn fx:id="colStContact" prefWidth="164.0" text="Student Contact" />
+                  <TableColumn fx:id="colStDob" prefWidth="180.0" text="Student DOB" />
+                  <TableColumn fx:id="colStGender" prefWidth="156.0" text="Student Gender" />
+              </columns>
+            </TableView>
+            <Label layoutX="576.0" layoutY="278.0" text="Courses">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblCourseMain" layoutX="132.0" layoutY="320.0" prefHeight="214.0" prefWidth="992.0">
+               <columns>
+                  <TableColumn fx:id="colCoruseCode" prefWidth="152.0" text="Course Code" />
+                  <TableColumn fx:id="colCoruseName" prefWidth="212.0" text="Course Name" />
+                  <TableColumn fx:id="colCoruseIntake" prefWidth="239.0" text="Course Intake" />
+                  <TableColumn fx:id="colCoruseFees" prefWidth="206.0" text="Course Fees (Rs.)" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" />
+                  <TableColumn fx:id="colCoruseDuration" prefWidth="181.0" text="Course Duration" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnAddNewSt" buttonType="RAISED" contentDisplay="CENTER" layoutX="985.0" layoutY="17.0" onAction="#btnAddNewStOnAction" prefHeight="44.0" prefWidth="189.0" style="-fx-background-radius: 60;" text="Add New Studnet">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ff7400" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAddNewCourse" buttonType="RAISED" contentDisplay="CENTER" layoutX="933.0" layoutY="274.0" onAction="#btnAddNewCourseOnAction" prefHeight="44.0" prefWidth="189.0" style="-fx-background-radius: 60;" text="Add New Course">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ff7400" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" contentDisplay="CENTER" layoutX="1196.0" layoutY="16.0" onAction="#btnCloseOnAction" prefHeight="61.0" prefWidth="66.0" style="-fx-background-radius: 60;" text=" ">
          <ripplerFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -62,10 +123,5 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <ImageView fitHeight="437.0" fitWidth="501.0" layoutX="422.0" layoutY="138.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../asserts/circle-cropped.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

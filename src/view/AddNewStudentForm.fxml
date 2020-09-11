@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="548.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewStudentFormController">
+   <children>
+      <AnchorPane fx:id="MainAnchor" layoutY="1.0" prefHeight="548.0" prefWidth="1256.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <ImageView fitHeight="386.0" fitWidth="413.0" layoutX="437.0" layoutY="101.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/circle-cropped.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtStId" labelFloat="true" layoutX="554.0" layoutY="137.0" prefHeight="30.0" prefWidth="180.0" promptText="Student ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStName" labelFloat="true" layoutX="554.0" layoutY="197.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Name">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStAddress" labelFloat="true" layoutX="554.0" layoutY="257.0" prefHeight="30.0" prefWidth="180.0" promptText="Studnet Address">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStContact" labelFloat="true" layoutX="554.0" layoutY="314.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Contact">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStDob" labelFloat="true" layoutX="554.0" layoutY="375.0" prefHeight="30.0" prefWidth="180.0" promptText="YYYY-MM-DD">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStGender" labelFloat="true" layoutX="554.0" layoutY="429.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Gender">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="399.0" layoutY="261.0" prefHeight="23.0" prefWidth="148.0" text="Student Address :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="402.0" layoutY="318.0" prefHeight="23.0" prefWidth="148.0" text="Student Contact :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="379.0" prefHeight="23.0" prefWidth="127.0" text="Student DOB :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="405.0" layoutY="433.0" prefHeight="23.0" prefWidth="148.0" text="Student Gender :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="440.0" layoutY="144.0" prefHeight="23.0" prefWidth="105.0" text="Student ID :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="201.0" prefHeight="23.0" prefWidth="134.0" text="Student Name :">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbStId" layoutX="746.0" layoutY="137.0" prefHeight="31.0" prefWidth="112.0" />
+            <JFXComboBox fx:id="cmbStGender" layoutX="746.0" layoutY="429.0" prefHeight="31.0" prefWidth="112.0" />
+            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="917.0" layoutY="126.0" onAction="#btnRegisterOnAction" style="-fx-background-radius: 50;" text="Register">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffd400" />
+                        <Stop color="#bf8f48" offset="0.7897129866439329" />
+                        <Stop color="#ff9900" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="929.0" layoutY="426.0" onAction="#btnClearOnAction" style="-fx-background-radius: 50;" text="Clear">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffd400" />
+                        <Stop color="#bf8f48" offset="0.7897129866439329" />
+                        <Stop color="#ff9900" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="510.0" layoutY="53.0" prefHeight="34.0" prefWidth="236.0" text="Add New Student">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="12.0" onAction="#btnBackOnAction" prefHeight="61.0" prefWidth="68.0" style="-fx-background-radius: 50;" text=" ">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/Circled%20Left_104px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
