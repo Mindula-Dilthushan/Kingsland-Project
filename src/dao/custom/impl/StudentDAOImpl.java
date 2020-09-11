@@ -56,6 +56,7 @@ public class StudentDAOImpl implements StudentDAO {
                     )
             );
         }
+        System.out.println("studentArrayList = " + studentArrayList);
         return studentArrayList;
     }
 }

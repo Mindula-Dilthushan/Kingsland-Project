@@ -11,7 +11,6 @@ public class StudentTM {
     public StudentTM() {
 
     }
-
     public StudentTM(String stId, String stName, String stAddress, String stContact, String stDob, String stGender) {
         this.stId = stId;
         this.stName = stName;
@@ -20,8 +19,6 @@ public class StudentTM {
         this.stDob = stDob;
         this.stGender = stGender;
     }
-
-
 
     public String getStId() {
         return stId;
@@ -71,15 +68,5 @@ public class StudentTM {
         this.stGender = stGender;
     }
 
-    @Override
-    public String toString() {
-        return "StudentTM{" +
-                "stId='" + stId + '\'' +
-                ", stName='" + stName + '\'' +
-                ", stAddress='" + stAddress + '\'' +
-                ", stContact='" + stContact + '\'' +
-                ", stDob='" + stDob + '\'' +
-                ", stGender='" + stGender + '\'' +
-                '}';
-    }
+
 }

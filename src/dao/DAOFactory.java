@@ -1,25 +1,21 @@
 package dao;
 
-import bo.custom.impl.CourseBOImpl;
-import bo.custom.impl.RegistrationBOImpl;
-import bo.custom.impl.StudentBOImpl;
+import dao.custom.impl.CourseDAOImpl;
 import dao.custom.impl.QueryDAOImpl;
+import dao.custom.impl.RegistrationDAOImpl;
+import dao.custom.impl.StudentDAOImpl;
 
 public class DAOFactory {
-    //1st Step
     private static DAOFactory daoFactory;
 
-    //2nd Step
     private DAOFactory() {
+
     }
 
-    //3rd Step
     public static DAOFactory getInstance() {
-        return (daoFactory == null) ?
-                (daoFactory = new DAOFactory()) : (daoFactory);
+        return (daoFactory == null) ? (daoFactory = new DAOFactory()) : (daoFactory);
     }
 
-    //4th Step
     public enum DAOType {
         STUDENT, COURSE, REGISTRATION,QUERY
     }
@@ -27,16 +23,15 @@ public class DAOFactory {
     public <T> T getDao(DAOType type) {
         switch (type) {
             case STUDENT:
-                return (T) new StudentBOImpl();
+                return (T) new StudentDAOImpl();
             case COURSE:
-                return (T) new CourseBOImpl();
+                return (T) new CourseDAOImpl();
             case REGISTRATION:
-                return (T) new RegistrationBOImpl();
+                return (T) new RegistrationDAOImpl();
             case QUERY:
                 return (T) new QueryDAOImpl();
             default:
                 return null;
         }
     }
-
 }
