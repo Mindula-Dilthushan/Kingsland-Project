@@ -5,6 +5,7 @@ import dao.custom.CourseDAO;
 import entity.Course;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,5 +56,15 @@ public class CourseDAOImpl implements CourseDAO {
             );
         }
         return courseArrayList;
+    }
+
+    @Override
+    public int getRegCount() throws ClassNotFoundException, SQLException {
+        String SQL = "SELECT COUNT(courseCode) FROM course";
+        ResultSet rst = CrudUtil.execute(SQL);
+        if (rst.next()){
+            return rst.getInt(1);
+        }
+        return -1;
     }
 }

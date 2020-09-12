@@ -1,5 +1,9 @@
 package dao;
 
+import entity.Student;
+import javafx.collections.ObservableList;
+import java.sql.SQLException;
+
 public interface QueryDAO extends SuperDAO {
-    public String getId()throws Exception;
+    ObservableList<Student> getStudents(String name)throws ClassNotFoundException, SQLException;
 }

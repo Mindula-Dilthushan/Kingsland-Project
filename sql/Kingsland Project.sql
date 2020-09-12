@@ -22,7 +22,7 @@ CREATE TABLE course(
 );
 
 CREATE TABLE registration(
-	regNo INT NOT NULL,
+	regNo VARCHAR(10) NOT NULL,
     regDate DATE,
     regFee DOUBLE(10,2),
     stID VARCHAR(45),
@@ -42,10 +42,11 @@ INSERT INTO course(courseCode,courseName,courseIntake,courseFee,courseDuration)
 			   ('C002','BCSC','Fall',80000.00,'2 Year'),
 			   ('C003','DFHS','Summer',50000.00,'2 Year');
 
-INSERT INTO registration(regNo,stID,courseCode,regDate,regFee)
-		VALUES (1,'S001','C001','2020-09-09',5000.00),
-			   (2,'S002','C002','2020-09-10',7000.00),
-			   (3,'S003','C003','2020-09-11',6000.00);
+INSERT INTO registration(regNo,regDate,regFee,stID,courseCode)
+		VALUES (1,'2020-09-09',5000.00,'S001','C001'),
+			   (2,'2020-09-09',6000.00,'S002','C002'),
+		       (3,'2020-09-09',7000.00,'S003','C003'),
+			
                
 SELECT * FROM student;
 SELECT * FROM course;

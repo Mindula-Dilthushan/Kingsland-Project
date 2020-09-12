@@ -4,13 +4,14 @@ import dao.CrudUtil;
 import dao.custom.StudentDAO;
 import entity.Student;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAOImpl implements StudentDAO {
     @Override
     public boolean save(Student student) throws Exception {
-        return CrudUtil.execute("INSERT INTO student VALUES(?,?,?,?,?)",student.getStId(),student.getStName(),student.getStAddress(),student.getStContact(),student.getStDob(),student.getStGender());
+        return CrudUtil.execute("INSERT INTO student VALUES(?,?,?,?,?,?)",student.getStId(),student.getStName(),student.getStAddress(),student.getStContact(),student.getStDob(),student.getStGender());
     }
 
     @Override
@@ -58,5 +59,15 @@ public class StudentDAOImpl implements StudentDAO {
         }
         System.out.println("studentArrayList = " + studentArrayList);
         return studentArrayList;
+    }
+
+    @Override
+    public int getRegCount() throws ClassNotFoundException, SQLException {
+        String SQL = "SELECT COUNT(stId) FROM student";
+        ResultSet rst = CrudUtil.execute(SQL);
+        if (rst.next()){
+            return rst.getInt(1);
+        }
+        return -1;
     }
 }

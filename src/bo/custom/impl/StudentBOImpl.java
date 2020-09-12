@@ -4,10 +4,10 @@ import bo.custom.StudentBO;
 import dao.DAOFactory;
 import dao.QueryDAO;
 import dao.custom.StudentDAO;
-import dto.CourseDTO;
 import dto.StudentDTO;
 import entity.Student;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,5 +57,10 @@ public class StudentBOImpl implements StudentBO {
     @Override
     public String getId() throws Exception {
         return null;
+    }
+
+    @Override
+    public int getRegCount() throws ClassNotFoundException, SQLException {
+        return studentDAO.getRegCount();
     }
 }

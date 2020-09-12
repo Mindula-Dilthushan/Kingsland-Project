@@ -2,6 +2,7 @@ package bo.custom;
 
 import dto.StudentDTO;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public interface StudentBO {
@@ -11,4 +12,5 @@ public interface StudentBO {
     public StudentDTO getStudent(String id)throws Exception;
     public ArrayList<StudentDTO> getAllStudent()throws Exception;
     public String getId()throws Exception;
+    public int getRegCount()throws ClassNotFoundException, SQLException;
 }

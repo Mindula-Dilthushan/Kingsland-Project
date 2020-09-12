@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.ArrayList;
+
 public class StudentDTO {
     private String stId;
     private String stName;
@@ -7,6 +9,7 @@ public class StudentDTO {
     private String stContact;
     private String stDob;
     private String stGender;
+    private ArrayList<RegistrationDTO>allRegDetails;
 
     public StudentDTO() {
     }
@@ -19,6 +22,18 @@ public class StudentDTO {
         this.stDob = stDob;
         this.stGender = stGender;
     }
+
+    public StudentDTO(String stId, String stName, String stAddress, String stContact, String stDob, String stGender, ArrayList<RegistrationDTO> allRegDetails) {
+        this.stId = stId;
+        this.stName = stName;
+        this.stAddress = stAddress;
+        this.stContact = stContact;
+        this.stDob = stDob;
+        this.stGender = stGender;
+        this.allRegDetails = allRegDetails;
+    }
+
+
 
     public String getStId() {
         return stId;
@@ -66,6 +81,13 @@ public class StudentDTO {
 
     public void setStGender(String stGender) {
         this.stGender = stGender;
+    }
+    public ArrayList<RegistrationDTO> getAllRegDetails() {
+        return allRegDetails;
+    }
+
+    public void setAllRegDetails(ArrayList<RegistrationDTO> allRegDetails) {
+        this.allRegDetails = allRegDetails;
     }
 
     @Override

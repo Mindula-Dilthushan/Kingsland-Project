@@ -14,94 +14,88 @@
 
 <AnchorPane prefHeight="548.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewStudentFormController">
    <children>
-      <AnchorPane fx:id="MainAnchor" layoutY="1.0" prefHeight="548.0" prefWidth="1256.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+      <AnchorPane fx:id="MainAnchor" layoutY="1.0" prefHeight="548.0" prefWidth="1256.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="386.0" fitWidth="413.0" layoutX="437.0" layoutY="101.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../asserts/circle-cropped.png" />
-               </image>
-            </ImageView>
-            <JFXTextField fx:id="txtStId" labelFloat="true" layoutX="554.0" layoutY="137.0" prefHeight="30.0" prefWidth="180.0" promptText="Student ID">
+            <JFXTextField fx:id="txtStId" labelFloat="true" layoutX="204.0" layoutY="133.0" onAction="#txtStIdOnAction" prefHeight="30.0" prefWidth="180.0" promptText="Student ID" unFocusColor="BLACK">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman Bold" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtStName" labelFloat="true" layoutX="554.0" layoutY="197.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Name">
+            <JFXTextField fx:id="txtStName" labelFloat="true" layoutX="204.0" layoutY="193.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Name">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtStAddress" labelFloat="true" layoutX="554.0" layoutY="257.0" prefHeight="30.0" prefWidth="180.0" promptText="Studnet Address">
+            <JFXTextField fx:id="txtStAddress" labelFloat="true" layoutX="204.0" layoutY="253.0" prefHeight="30.0" prefWidth="180.0" promptText="Studnet Address">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtStContact" labelFloat="true" layoutX="554.0" layoutY="314.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Contact">
+            <JFXTextField fx:id="txtStContact" labelFloat="true" layoutX="204.0" layoutY="310.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Contact">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtStDob" labelFloat="true" layoutX="554.0" layoutY="375.0" prefHeight="30.0" prefWidth="180.0" promptText="YYYY-MM-DD">
+            <JFXTextField fx:id="txtStDob" labelFloat="true" layoutX="204.0" layoutY="371.0" prefHeight="30.0" prefWidth="180.0" promptText="YYYY-MM-DD">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtStGender" labelFloat="true" layoutX="554.0" layoutY="429.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Gender">
+            <JFXTextField fx:id="txtStGender" labelFloat="true" layoutX="204.0" layoutY="425.0" prefHeight="30.0" prefWidth="180.0" promptText="Student Gender">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="Times New Roman" size="16.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font>
             </JFXTextField>
-            <Label layoutX="399.0" layoutY="261.0" prefHeight="23.0" prefWidth="148.0" text="Student Address :">
+            <Label layoutX="49.0" layoutY="257.0" prefHeight="23.0" prefWidth="148.0" text="Student Address :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="402.0" layoutY="318.0" prefHeight="23.0" prefWidth="148.0" text="Student Contact :">
+            <Label layoutX="52.0" layoutY="314.0" prefHeight="23.0" prefWidth="148.0" text="Student Contact :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="421.0" layoutY="379.0" prefHeight="23.0" prefWidth="127.0" text="Student DOB :">
+            <Label layoutX="71.0" layoutY="375.0" prefHeight="23.0" prefWidth="127.0" text="Student DOB :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="405.0" layoutY="433.0" prefHeight="23.0" prefWidth="148.0" text="Student Gender :">
+            <Label layoutX="55.0" layoutY="429.0" prefHeight="23.0" prefWidth="148.0" text="Student Gender :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="440.0" layoutY="144.0" prefHeight="23.0" prefWidth="105.0" text="Student ID :">
+            <Label layoutX="90.0" layoutY="140.0" prefHeight="23.0" prefWidth="105.0" text="Student ID :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="416.0" layoutY="201.0" prefHeight="23.0" prefWidth="134.0" text="Student Name :">
+            <Label layoutX="66.0" layoutY="197.0" prefHeight="23.0" prefWidth="134.0" text="Student Name :">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="cmbStId" layoutX="746.0" layoutY="137.0" prefHeight="31.0" prefWidth="112.0" />
-            <JFXComboBox fx:id="cmbStGender" layoutX="746.0" layoutY="429.0" prefHeight="31.0" prefWidth="112.0" />
-            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="917.0" layoutY="126.0" onAction="#btnRegOnAction" style="-fx-background-radius: 50;" text="Register">
+            <JFXComboBox fx:id="cmbStGender" labelFloat="true" layoutX="396.0" layoutY="426.0" onAction="#cmbStGenderOnAction" prefHeight="31.0" prefWidth="112.0" promptText="Gender" />
+            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="1122.0" layoutY="488.0" onAction="#btnRegOnAction" style="-fx-background-radius: 50;" text="Register">
                <ripplerFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
@@ -115,7 +109,7 @@
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="929.0" layoutY="426.0" onAction="#btnClearOnAction" style="-fx-background-radius: 50;" text="Clear">
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="203.0" layoutY="481.0" onAction="#btnClearOnAction" style="-fx-background-radius: 50;" text="Clear">
                <ripplerFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
@@ -129,7 +123,7 @@
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </JFXButton>
-            <Label layoutX="510.0" layoutY="53.0" prefHeight="34.0" prefWidth="236.0" text="Add New Student">
+            <Label layoutX="455.0" layoutY="39.0" prefHeight="34.0" prefWidth="346.0" text="Add New Student Register">
                <font>
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
@@ -154,6 +148,73 @@
                   </ImageView>
                </graphic>
             </JFXButton>
+            <JFXComboBox fx:id="cmbStID" labelFloat="true" layoutX="396.0" layoutY="134.0" onAction="#cmbStIDOnAction" prefHeight="31.0" prefWidth="112.0" promptText="Student ID" />
+            <JFXTextField fx:id="txtCode" labelFloat="true" layoutX="578.0" layoutY="139.0" onAction="#txtCodeOnAction" prefHeight="30.0" prefWidth="180.0" promptText="Course Code">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCName" labelFloat="true" layoutX="578.0" layoutY="199.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Name ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCIntake" labelFloat="true" layoutX="578.0" layoutY="258.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Intake">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCRupees" labelFloat="true" layoutX="578.0" layoutY="316.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Fee (Rs.)">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCDuration" labelFloat="true" layoutX="578.0" layoutY="377.0" prefHeight="30.0" prefWidth="180.0" promptText="Course Duration ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbCourseCode" labelFloat="true" layoutX="770.0" layoutY="140.0" onAction="#cmbCourseCodeOnAction" prefHeight="31.0" prefWidth="119.0" promptText="CourseCode" />
+            <JFXTextField fx:id="txtRegDate" labelFloat="true" layoutX="952.0" layoutY="197.0" onAction="#txtRegDateOnAction" prefHeight="32.0" prefWidth="160.0" promptText="Register Date">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtRegFees" labelFloat="true" layoutX="952.0" layoutY="255.0" onAction="#txtRegFeesOnAction" prefHeight="32.0" prefWidth="160.0" promptText="Register Fees">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtRegNo" labelFloat="true" layoutX="952.0" layoutY="140.0" onAction="#txtRegNoOnAction" prefHeight="32.0" prefWidth="160.0" promptText="Register No">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbRegNo" labelFloat="true" layoutX="1122.0" layoutY="140.0" onAction="#cmbRegNoOnAction" prefHeight="31.0" prefWidth="119.0" promptText="Register No" />
          </children>
       </AnchorPane>
    </children>

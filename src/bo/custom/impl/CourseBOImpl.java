@@ -6,6 +6,8 @@ import dao.QueryDAO;
 import dao.custom.CourseDAO;
 import dto.CourseDTO;
 import entity.Course;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +49,11 @@ public class CourseBOImpl implements CourseBO {
 
     @Override
     public String getId() throws Exception {
-        return queryDAO.getId();
+        return queryDAO.toString();
+    }
+
+    @Override
+    public int getRegCount() throws ClassNotFoundException, SQLException {
+        return courseDAO.getRegCount();
     }
 }
